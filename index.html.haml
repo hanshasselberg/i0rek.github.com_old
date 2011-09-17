@@ -1,0 +1,297 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}
+    %title hans.io
+    %meta{content: "hans.io", name: "description"}
+    %meta{content: "Hans Hasselberg", name: "author"}
+    %link{href: "http://twitter.github.com/bootstrap/1.3.0/bootstrap.css", rel: "stylesheet"}
+    %link{href: "http://twitter.github.com/bootstrap/assets/css/docs.css", rel: "stylesheet"}
+    %script{src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'}
+    %script{src: "bootstrap-scrollspy.js"}
+      :css
+        body {
+          padding-top: 60px;
+        }
+  %body
+    .topbar{data: {scrollspy: "scrollspy"}}
+      .fill
+        .container
+          %a.brand{href: "#"} hans.io
+          %ul.nav{data: {tabs: "tabs"}}
+            %li.active
+              %a{href: "#home"} Home
+            %li
+              %a{href: "#about"} About me
+            %li
+              %a{href: "#hobbies"} Hobbies
+            %li
+              %a{href: "#skills"} Technical skills
+            %li
+              %a{href: "#cv"} Curriculum Vitae
+            %li
+              %a{href: "#contact"} Contact
+    .container
+      .hero-unit#home
+        %h1 Hello, world!
+        %p.lead
+          I'm a developer, currently working with Rails which is fun.
+          %br
+          But I'm very open minded and interested in a lot of stuff, so
+          %strong don't
+          hesitate to
+          %a{href: '#contact'}
+            %strong Contact me!
+      %section#about
+        .page-header
+          %h1
+            About me
+            %small Introduction
+        %p
+          I'm a 28years old developer, located in Potsdam. I love
+          getting things done, coding and more generally learning new
+          stuff. Unlike some colleagues I can communicate, be nice and
+          most important (at least for me) I have a life.
+          %br
+          %br
+          Have fun, looking around!
+      %section#hobbies
+        .page-header
+          %h1
+            Hobbies
+            %small Lots of interesting things.
+        .row
+          .span4
+            Swimming
+          .span12
+            I always found swimming to be boring until I discovered
+            %a{href: 'http://en.wikipedia.org/wiki/Total_Immersion'}
+              Total Immersion
+            3 years ago. This technique was what
+            I was looking for so long!
+            Swimming feels natural and is fun, now.
+        .row
+          .span4
+            Kungfu
+          .span12
+            After six years of training
+            %a{href: 'http://www.damo-chuan.de'} Damo Chuan Kungfu
+            I decided to cancel my membership June 2011 because of the
+            lack of time. But I will continue this beautiful sport as
+            soon as possible.
+        .row
+          .span4
+            Lockpicking
+          .span12
+            Lockpicking has imho much incommen with reversing/coding,
+            thatswhy I choose september 2009 to buy a kit and learn to pick
+            locks. Turns out that this is much harder than I thought and
+            it took me two month till my first
+            %a{href: 'open_lock.jpg'} success
+            \. So, don't need wory about your new flatscreen.
+        .row
+          .span4
+            Coding
+          .span12
+            I like coding very much and my girlfriend can tell, that I
+            code most of my freetime.
+            There are so many things waiting to get coded or explored I
+            often don't know what to start with. I
+            %ul
+              %li can crack osx apps,
+              %li
+                started to code an online finance management software
+                (my first Rails project) until it turned out to be too
+                big two years later
+              %li
+                created the realtime monitoring framework
+                %a{href: 'https://github.com/organizations/healthety'}
+                  Healthey
+                with friends and
+              %li
+                now I'm playing around with
+                %a{href: 'https://github.com/soldat/soldat.js'} webgl
+                \.
+        .row
+          .span4
+            Pool Billard
+          .span12
+            Long long time ago I played pretty decent! Now its good enough
+            to beat beginners. I don't play very often any more, but still
+            like it.
+      %section#skills
+        .page-header
+          %h1
+            Technical skills
+            %small /(bb|[^b]{2})/
+        .row
+          .span4
+            Programming Languages and Frameworks
+          .span12
+            Ruby, Rails, Javascript, NodeJS, Java, C++, C
+        .row
+          .span4
+            Databases
+          .span12
+            MySQL, MongoDB, Redis, SQLite
+        .row
+          .span4
+            others
+          .span12
+            Google Adwords API, Saleforce API, scale webapps with
+            chef &amp; opscode.
+        %br
+        %br
+        %p
+          This list is far away from complete, its the stuff from my current day to day work.
+          %a{href: '#contact'} Ask me
+          if you have something in mind!
+      %section#cv
+        .page-header
+          %h1
+            Curriculumn Vitae
+            %small Brief history.
+        %h3 Work Experience
+        .row
+          .span4
+            since Aug 2011
+          .span12
+            Side Project: Rails Developer at
+            %a{href: 'http://www.udk-berlin.de/'} University of the Arts
+            , Berlin
+        .row
+          .span4
+            since Jun 2010
+          .span12
+            Rails Developer at
+            %a{href: 'http://www.kaeuferportal.de'} Beko K&auml;uferportal
+            , Berlin
+        .row
+          .span4
+            Feb 2010 - Jun 2010
+          .span12
+            Rails Developer at
+            %a{href: 'http://www.mmpg.de/'} MMP Group
+            , Hamburg
+        .row
+          .span4
+            Jan 2010 - Feb 2010
+          .span12
+            Java Developer at
+            %a{href: 'http://www.brands4friends.de/'} Brands4Friends
+            , Berlin
+        .row
+          .span4
+            Apr 2009 - Nov 2009
+          .span12
+            Masterthesis: Analysis of a composable system architecture at
+            %a{href: 'http://www.siemens.de/'} Siemens
+            and
+            %a{href: 'http://www.tu-berlin.de/'}
+              Technische Universit&auml;t
+            , Berlin
+        .row
+          .span4
+            Nov 2007 - Mar 2009
+          .span12
+            Working student (firmware development) at
+            %a{href: 'http://www.siemens.de/'} Siemens
+            , Berlin
+        .row
+          .span4
+            Oct 2006 - Sep 2007
+          .span12
+            Bachelorthesis: LectureBrowser - Videosearchengine and
+            Annotationtool at
+            %a{href: 'http://www.hpi.uni-potsdam.de/'}
+              Hasso-Plattner-Institute
+            , Potsdam
+
+        %h3 University Education
+        .row
+          .span4
+            Oct 2007 - Nov 2009
+          .span12
+            Student at
+            %a{href: 'http://www.tu-berlin.de/'}
+              Technische Universit&auml;t
+            , Berlin
+            %br
+            Master of Science in Information Technology
+        .row
+          .span4
+            Oct 2004 - Nov 2007
+          .span12
+            Student at
+            %a{href: 'http://www.hpi.uni-potsdam.de/'}
+              Hasso-Plattner-Institute
+            , Potsdam
+            %br
+            Bachelor of Science in Information Technology
+        %h3 School Education
+        .row
+          .span4
+            Nov 2003 - Jul 2004
+          .span12
+            Civillian Service, Berlin
+        .row
+          .span4
+            Sep 1996 - Aug 2003
+          .span12
+            High School, Berlin
+        .row
+          .span4
+            Sep 1990 - Aug 1996
+          .span12
+            Primary School, Berlin
+      %section#contact
+        .page-header
+          %h1
+            Contact
+            %small Some ways get in touch.
+        .row
+          .span4
+            Email
+          .span12
+            %a{href: 'mailto:me@hans.io'} me@hans.io
+        .row
+          .span4
+            Twitter
+          .span12
+            %a{href: 'https://twitter.com/#!/i0rek'} @i0rek
+        .row
+          .span4
+            Github
+          .span12
+            %a{href: 'https://github.com/i0rek'} i0rek
+        .row
+          .span4
+            Xing
+          .span12
+            %a{href: 'http://www.xing.com/profile/Hans_Hasselberg'}
+              Hans Hasselberg
+        .row
+          .span4
+            Call
+            %span.help-block Can't wait, hmm?
+          .span12
+            %a{href: 'tel:me@hans.io'} 01570 3520556
+      %section#end
+        .page-header
+          %h1 The End
+        %p
+          Any feedback, typos and improvents are always appreciated!
+          %br
+          %br
+          %strong Thanks for visiting!
+      %footer
+        %p
+          © hans.io 2011, created with
+          %a{href: 'http://www.vim.org'} Vim
+          ,
+          %a{href: 'http://twitter.github.com/bootstrap'} Bootstrap
+          and
+          %a{href: 'http://haml-lang.com/'} Haml
+          under
+          %a{href: 'http://www.apple.com/macosx/'} OS X
+          \.
