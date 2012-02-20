@@ -5,43 +5,41 @@
     %title hans.io
     %meta{content: "hans.io", name: "description"}
     %meta{content: "Hans Hasselberg", name: "author"}
-    %link{href: "http://twitter.github.com/bootstrap/1.3.0/bootstrap.css", rel: "stylesheet"}
-    %link{href: "http://twitter.github.com/bootstrap/assets/css/docs.css", rel: "stylesheet"}
-    %script{src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'}
-    %script{src: "bootstrap-scrollspy.js"}
+    %link{href: "bootstrap/css/bootstrap.min.css", rel: "stylesheet"}
     :css
       body {
         padding-top: 60px;
       }
-    :javascript
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-25831094-1']);
-      _gaq.push(['_trackPageview']);
-      _gaq.push(['_trackPageLoadTime']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-  %body
-    .topbar{data: {scrollspy: "scrollspy"}}
-      .fill
+      section {
+        padding-top: 60px;
+      }
+      h3 {
+        padding-top: 10px;
+      }
+  %body{data: {spy: "scroll", target: "#navbar"}}
+    #navbar.navbar.navbar-fixed-top
+      .navbar-inner
         .container
+          %a.btn.btn-navbar{data: {toggle: "collaps", target: ".nav-collapse"}}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
           %a.brand{href: "#"} hans.io
-          %ul.nav{data: {tabs: "tabs"}}
-            %li.active
-              %a{href: "#home"} Home
-            %li
-              %a{href: "#about"} About me
-            %li
-              %a{href: "#skills"} Technical skills
-            %li
-              %a{href: "#cv"} Curriculum Vitae
-            %li
-              %a{href: "#hobbies"} Hobbies
-            %li
-              %a{href: "#contact"} Contact
+          .nav-collaps
+            %ul.nav
+              %li.active
+                %a{href: "#home"} Home
+              %li
+                %a{href: "#about"} About me
+              %li
+                %a{href: "#skills"} Technical skills
+              %li
+                %a{href: "#cv"} Curriculum Vitae
+              %li
+                %a{href: "#hobbies"} Hobbies
+              %li
+                %a{href: "#contact"} Contact
+
     .container
       .hero-unit#home
         %h1
@@ -80,37 +78,37 @@
           %h1
             Technical skills
             %small /(bb|[^b]{2})/
-        .row
-          .span4
+        .row.show-grid
+          .span3
             Programming Languages and Frameworks
-          .span12
+          .span9
             Ruby, Rails, Sinatra, Javascript, NodeJS, Java, C++, C
         .row
-          .span4
+          .span3
             Databases
-          .span12
+          .span9
             MongoDB, Redis, MySQL
         .row
-          .span4
+          .span3
             others
-          .span12
+          .span9
             Vim, Git, Google Adwords API, Salesforce API, Facebook API,
             Chef &amp; Opscode.
 
         %h3 Projects
         .row
-          .span4
+          .span3
             %a{href: 'https://github.com/i0rek/longjohn'} Longjohn
-          .span12
+          .span9
             Longjohn is a software to manage studios and equipment for the
             sound engineers from the UDK Berlin.
             %br
             Its still under development but at least some code to look at.
         .row
-          .span4
+          .span3
             %a{href: 'https://github.com/healthety'}
               Healthety
-          .span12
+          .span9
             We developed Healthety at K&auml;uferportal because we wanted
             to monitor the load from every server in realtime.
             %br
@@ -126,37 +124,37 @@
             %small Brief history.
         %h3 Work Experience
         .row
-          .span4
+          .span3
             since Nov 2011
-          .span12
+          .span9
             Rails Developer at&nbsp;
-            %a{href: 'http://www.1000jobboersen.de'}> 1000 Jobboersen
+            %a{href: 'http://www.1000jobboersen.de'}> 1000 Jobb&ouml;rsen
             , Berlin
         .row
-          .span4
+          .span3
             Jun 2010 - Nov 2011
-          .span12
+          .span9
             Rails Developer at&nbsp;
             %a{href: 'http://www.kaeuferportal.de'}> Beko K&auml;uferportal
             , Berlin
         .row
-          .span4
+          .span3
             Feb 2010 - Jun 2010
-          .span12
+          .span9
             Rails Developer at&nbsp;
             %a{href: 'http://www.mmpg.de/'}> MMP Group
             , Hamburg
         .row
-          .span4
+          .span3
             Jan 2010 - Feb 2010
-          .span12
+          .span9
             Java Developer at&nbsp;
             %a{href: 'http://www.brands4friends.de/'}> Brands4Friends
             , Berlin
         .row
-          .span4
+          .span3
             Apr 2009 - Nov 2009
-          .span12
+          .span9
             Masterthesis: Analysis of a composable system
             architecture at
             %a{href: 'http://www.siemens.de/'} Siemens
@@ -164,16 +162,16 @@
             %a{href: 'http://www.tu-berlin.de/'}> Technische Universit&auml;t
             , Berlin
         .row
-          .span4
+          .span3
             Nov 2007 - Mar 2009
-          .span12
+          .span9
             Working student (firmware development) at&nbsp;
             %a{href: 'http://www.siemens.de/'}> Siemens
             , Berlin
         .row
-          .span4
+          .span3
             Oct 2006 - Sep 2007
-          .span12
+          .span9
             Bachelorthesis: LectureBrowser - Videosearchengine and
             Annotationtool at&nbsp;
             %a{href: 'http://www.hpi.uni-potsdam.de/'}> Hasso-Plattner-Institute
@@ -181,18 +179,18 @@
 
         %h3 University Education
         .row
-          .span4
+          .span3
             Oct 2007 - Nov 2009
-          .span12
+          .span9
             Student at&nbsp;
             %a{href: 'http://www.tu-berlin.de/'}> Technische Universit&auml;t
             , Berlin
             %br
             Master of Science in Information Technology
         .row
-          .span4
+          .span3
             Oct 2004 - Nov 2007
-          .span12
+          .span9
             Student at&nbsp;
             %a{href: 'http://www.hpi.uni-potsdam.de/'}> Hasso-Plattner-Institute
             , Potsdam
@@ -201,14 +199,14 @@
 
         %h3 School Education
         .row
-          .span4
+          .span3
             Nov 2003 - Jul 2004
-          .span12
+          .span9
             Civilian Service, Berlin
         .row
-          .span4
+          .span3
             Sep 1996 - Aug 2003
-          .span12
+          .span9
             High School, Berlin
       %section#hobbies
         .page-header
@@ -216,9 +214,9 @@
             Hobbies
             %small Lots of interesting things.
         .row
-          .span4
+          .span3
             Swimming
-          .span12
+          .span9
             I always found swimming to be boring until I discovered
             %a{href: 'http://en.wikipedia.org/wiki/Total_Immersion'}
               Total Immersion
@@ -226,18 +224,18 @@
             I was looking for so long!
             Swimming feels natural and is fun, now.
         .row
-          .span4
+          .span3
             Kungfu
-          .span12
+          .span9
             After six years of training
             %a{href: 'http://www.damo-chuan.de'} Damo Chuan Kungfu
             I decided to cancel my membership June 2011 because of the
             lack of time. But I will continue this beautiful sport as
             soon as possible.
         .row
-          .span4
+          .span3
             Lockpicking
-          .span12
+          .span9
             Lockpicking has imho much in common with reverse engineering,
             that's why I chose in September 2009 to buy a kit and learn to
             pick locks. Turns out that this is much harder than I
@@ -245,16 +243,16 @@
             %a{href: 'open_lock.jpg'}> success
             \. So, don't worry about your new flatscreen.
         .row
-          .span4
+          .span3
             Pool Billard
-          .span12
+          .span9
             Long long time ago I played pretty decent! Now it's good enough
             to beat beginners. I don't play very often any more, but still
             like it.
         .row
-          .span4
+          .span3
             Open Source
-          .span12
+          .span9
             I contributed to various open source projects. Most of the time
             for
             %a{href: 'https://github.com/mongoid/mongoid'} Mongoid
@@ -265,19 +263,19 @@
             Contact
             %small Some ways get in touch.
         .row
-          .span4
+          .span3
             Email
-          .span12
+          .span9
             %a{href: 'mailto:me@hans.io'} me@hans.io
         .row
-          .span4
+          .span3
             Twitter
-          .span12
+          .span9
             %a{href: 'https://twitter.com/#!/i0rek'} @i0rek
         .row
-          .span4
+          .span3
             Github
-          .span12
+          .span9
             %a{href: 'https://github.com/i0rek'} i0rek
       %section#end
         .page-header
@@ -304,3 +302,16 @@
           Last updated at 01/31/2012
         %p
           © hans.io 2011 - 2012
+    %script{src: "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"}
+    %script{src: "bootstrap/js/bootstrap.min.js"}
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-25831094-1']);
+      _gaq.push(['_trackPageview']);
+      _gaq.push(['_trackPageLoadTime']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();

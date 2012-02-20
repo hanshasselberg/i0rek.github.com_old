@@ -5,57 +5,53 @@
     <title>hans.io</title>
     <meta content='hans.io' name='description' />
     <meta content='Hans Hasselberg' name='author' />
-    <link href='http://twitter.github.com/bootstrap/1.3.0/bootstrap.css' rel='stylesheet' />
-    <link href='http://twitter.github.com/bootstrap/assets/css/docs.css' rel='stylesheet' />
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
-    <script src='bootstrap-scrollspy.js'></script>
+    <link href='bootstrap/css/bootstrap.min.css' rel='stylesheet' />
     <style type='text/css'>
       /*<![CDATA[*/
         body {
           padding-top: 60px;
         }
+        section {
+          padding-top: 60px;
+        }
+        h3 {
+          padding-top: 10px;
+        }
       /*]]>*/
     </style>
-    <script type='text/javascript'>
-      //<![CDATA[
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-25831094-1']);
-        _gaq.push(['_trackPageview']);
-        _gaq.push(['_trackPageLoadTime']);
-        
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-      //]]>
-    </script>
   </head>
-  <body>
-    <div class='topbar' data-scrollspy='scrollspy'>
-      <div class='fill'>
+  <body data-spy='scroll' data-target='#navbar'>
+    <div class='navbar navbar-fixed-top' id='navbar'>
+      <div class='navbar-inner'>
         <div class='container'>
+          <a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collaps'>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </a>
           <a class='brand' href='#'>hans.io</a>
-          <ul class='nav' data-tabs='tabs'>
-            <li class='active'>
-              <a href='#home'>Home</a>
-            </li>
-            <li>
-              <a href='#about'>About me</a>
-            </li>
-            <li>
-              <a href='#skills'>Technical skills</a>
-            </li>
-            <li>
-              <a href='#cv'>Curriculum Vitae</a>
-            </li>
-            <li>
-              <a href='#hobbies'>Hobbies</a>
-            </li>
-            <li>
-              <a href='#contact'>Contact</a>
-            </li>
-          </ul>
+          <div class='nav-collaps'>
+            <ul class='nav'>
+              <li class='active'>
+                <a href='#home'>Home</a>
+              </li>
+              <li>
+                <a href='#about'>About me</a>
+              </li>
+              <li>
+                <a href='#skills'>Technical skills</a>
+              </li>
+              <li>
+                <a href='#cv'>Curriculum Vitae</a>
+              </li>
+              <li>
+                <a href='#hobbies'>Hobbies</a>
+              </li>
+              <li>
+                <a href='#contact'>Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -107,37 +103,37 @@
             <small>/(bb|[^b]{2})/</small>
           </h1>
         </div>
-        <div class='row'>
-          <div class='span4'>
+        <div class='row show-grid'>
+          <div class='span3'>
             Programming Languages and Frameworks
           </div>
-          <div class='span12'>
+          <div class='span9'>
             Ruby, Rails, Sinatra, Javascript, NodeJS, Java, C++, C
           </div>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Databases
           </div>
-          <div class='span12'>
+          <div class='span9'>
             MongoDB, Redis, MySQL
           </div>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             others
           </div>
-          <div class='span12'>
+          <div class='span9'>
             Vim, Git, Google Adwords API, Salesforce API, Facebook API,
             Chef &amp; Opscode.
           </div>
         </div>
         <h3>Projects</h3>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             <a href='https://github.com/i0rek/longjohn'>Longjohn</a>
           </div>
-          <div class='span12'>
+          <div class='span9'>
             Longjohn is a software to manage studios and equipment for the
             sound engineers from the UDK Berlin.
             <br />
@@ -145,12 +141,12 @@
           </div>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             <a href='https://github.com/healthety'>
               Healthety
             </a>
           </div>
-          <div class='span12'>
+          <div class='span9'>
             We developed Healthety at K&auml;uferportal because we wanted
             to monitor the load from every server in realtime.
             <br />
@@ -171,42 +167,42 @@
         </div>
         <h3>Work Experience</h3>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             since Nov 2011
           </div>
-          <div class='span12'>
-            Rails Developer at&nbsp;<a href='http://www.1000jobboersen.de'>1000 Jobboersen</a>, Berlin
+          <div class='span9'>
+            Rails Developer at&nbsp;<a href='http://www.1000jobboersen.de'>1000 Jobb&ouml;rsen</a>, Berlin
           </div>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Jun 2010 - Nov 2011
           </div>
-          <div class='span12'>
+          <div class='span9'>
             Rails Developer at&nbsp;<a href='http://www.kaeuferportal.de'>Beko K&auml;uferportal</a>, Berlin
           </div>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Feb 2010 - Jun 2010
           </div>
-          <div class='span12'>
+          <div class='span9'>
             Rails Developer at&nbsp;<a href='http://www.mmpg.de/'>MMP Group</a>, Hamburg
           </div>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Jan 2010 - Feb 2010
           </div>
-          <div class='span12'>
+          <div class='span9'>
             Java Developer at&nbsp;<a href='http://www.brands4friends.de/'>Brands4Friends</a>, Berlin
           </div>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Apr 2009 - Nov 2009
           </div>
-          <div class='span12'>
+          <div class='span9'>
             Masterthesis: Analysis of a composable system
             architecture at
             <a href='http://www.siemens.de/'>Siemens</a>
@@ -214,38 +210,38 @@
           </div>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Nov 2007 - Mar 2009
           </div>
-          <div class='span12'>
+          <div class='span9'>
             Working student (firmware development) at&nbsp;<a href='http://www.siemens.de/'>Siemens</a>, Berlin
           </div>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Oct 2006 - Sep 2007
           </div>
-          <div class='span12'>
+          <div class='span9'>
             Bachelorthesis: LectureBrowser - Videosearchengine and
             Annotationtool at&nbsp;<a href='http://www.hpi.uni-potsdam.de/'>Hasso-Plattner-Institute</a>, Potsdam
           </div>
         </div>
         <h3>University Education</h3>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Oct 2007 - Nov 2009
           </div>
-          <div class='span12'>
+          <div class='span9'>
             Student at&nbsp;<a href='http://www.tu-berlin.de/'>Technische Universit&auml;t</a>, Berlin
             <br />
             Master of Science in Information Technology
           </div>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Oct 2004 - Nov 2007
           </div>
-          <div class='span12'>
+          <div class='span9'>
             Student at&nbsp;<a href='http://www.hpi.uni-potsdam.de/'>Hasso-Plattner-Institute</a>, Potsdam
             <br />
             Bachelor of Science in Information Technology
@@ -253,18 +249,18 @@
         </div>
         <h3>School Education</h3>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Nov 2003 - Jul 2004
           </div>
-          <div class='span12'>
+          <div class='span9'>
             Civilian Service, Berlin
           </div>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Sep 1996 - Aug 2003
           </div>
-          <div class='span12'>
+          <div class='span9'>
             High School, Berlin
           </div>
         </div>
@@ -277,10 +273,10 @@
           </h1>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Swimming
           </div>
-          <div class='span12'>
+          <div class='span9'>
             I always found swimming to be boring until I discovered
             <a href='http://en.wikipedia.org/wiki/Total_Immersion'>
               Total Immersion
@@ -291,10 +287,10 @@
           </div>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Kungfu
           </div>
-          <div class='span12'>
+          <div class='span9'>
             After six years of training
             <a href='http://www.damo-chuan.de'>Damo Chuan Kungfu</a>
             I decided to cancel my membership June 2011 because of the
@@ -303,10 +299,10 @@
           </div>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Lockpicking
           </div>
-          <div class='span12'>
+          <div class='span9'>
             Lockpicking has imho much in common with reverse engineering,
             that's why I chose in September 2009 to buy a kit and learn to
             pick locks. Turns out that this is much harder than I
@@ -314,20 +310,20 @@
           </div>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Pool Billard
           </div>
-          <div class='span12'>
+          <div class='span9'>
             Long long time ago I played pretty decent! Now it's good enough
             to beat beginners. I don't play very often any more, but still
             like it.
           </div>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Open Source
           </div>
-          <div class='span12'>
+          <div class='span9'>
             I contributed to various open source projects. Most of the time
             for
             <a href='https://github.com/mongoid/mongoid'>Mongoid</a>
@@ -343,26 +339,26 @@
           </h1>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Email
           </div>
-          <div class='span12'>
+          <div class='span9'>
             <a href='mailto:me@hans.io'>me@hans.io</a>
           </div>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Twitter
           </div>
-          <div class='span12'>
+          <div class='span9'>
             <a href='https://twitter.com/#!/i0rek'>@i0rek</a>
           </div>
         </div>
         <div class='row'>
-          <div class='span4'>
+          <div class='span3'>
             Github
           </div>
-          <div class='span12'>
+          <div class='span9'>
             <a href='https://github.com/i0rek'>i0rek</a>
           </div>
         </div>
@@ -393,5 +389,21 @@
         </p>
       </footer>
     </div>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+    <script src='bootstrap/js/bootstrap.min.js'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-25831094-1']);
+        _gaq.push(['_trackPageview']);
+        _gaq.push(['_trackPageLoadTime']);
+        
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      //]]>
+    </script>
   </body>
 </html>
